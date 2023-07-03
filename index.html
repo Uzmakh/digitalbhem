@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="src/style.css" />
+	<link rel="stylesheet" href="src/responsive.css" />
+
+	<title>Hotel Booking Form</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<section>
+			<h1>Hotel Booking Registration Form</h1>
+			<form action="#">
+				<fieldset>
+					<legend>Customer Information</legend>
+					<div class="input-field">
+						<label for="fullName">Customer Name</label>
+						<input type="text" name="fullName" id="fullName" placeholder="Enter your full name" required />
+					</div>
+					<div class="input-field">
+						<label for="phoneNumber">Phone No.</label>
+						<input type="tel" name="tel" id="phoneNumber" placeholder="Don't forget area code!" />
+					</div>
+
+					<div class="input-field">
+						<label for="checkInDate"> Check-In Date & Time </label>
+						<input type="datetime-local" name="date" id="checkInDate" required />
+					</div>
+					<div class="input-field">
+						<label for="totalDays">Total No. of Days</label>
+						<input type="number" name="days" id="totalDays" min="1" max="15" required />
+					</div>
+
+					<div class="input-field">
+						<label for="totalPersons">Total No. of Persons</label>
+						<input type="number" name="persons" id="totalPersons" min="1" max="4" required />
+					</div>
+				</fieldset>
+
+				<fieldset class="roomType">
+					<legend>Room Information</legend>
+
+					<label for="roomType"> Select Room Type </label>
+					<select name="roomType" id="roomType">
+						<option selected class="selected">Select Room Type</option>
+						<option value="deluxe">Deluxe Room - Price: 2500</option>
+
+						<option value="suite">Suite Room - Price: 4000</option>
+					</select>
+
+					<p>Avail Amenities</p>
+
+					<label class="form-control">
+						<input type="checkbox" name="coochecckbox" id="ac" />
+						AC Price- Rs. 1000</label>
+
+
+					<label class="form-control">
+						<input type="checkbox" name="checckbox" id="locker" /> Locker Price- Rs. 300</label>
+
+				</fieldset>
+
+				<fieldset>
+					<legend>Advance Amount</legend>
+					<label for="advanceAmount">Advance Amount</label>
+					<input type="number" name="amount" id="advanceAmount" value="1000" min="1000" step="500" required />
+				</fieldset>
+
+				<input type="button" value="Register" onclick="generateReceipt()" />
+			</form>
+
+			<!-- Receipt Container -->
+			<div id="receiptContainer" class="hidden">
+				<h2>Receipt</h2>
+				<div id="receipt"></div>
+			</div>
+		</section>
+	</div>
+	<!-- wrapper -->
+
+	<!-- footer -->
+	<footer class="page-footer">
+		<p>
+			Built by &copy; YouZees Web Developer,<br />
+			under internship program, June-Batch 2023<br />
+			By <a href="https://digitalbhem.com/" target="_blank">DigitalBhem</a>
+		</p>
+	</footer>
+
+	<script src="src/index.js"></script>
+</body>
+
+</html>

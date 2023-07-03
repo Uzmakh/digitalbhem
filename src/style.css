@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--background: #f5deb3;
+	--font-color: #663300;
+	--tertiary-color: #e8a322;
+	--a-hover: #ff9933;
+	--a-active: #ffcc66;
+}
+/* =====================
+    scrollbar-styling
+   ===================== */
+::-webkit-scrollbar {
+	width: 1vw;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--tertiary-color);
+	border-radius: 10px;
+
+	border: 2px solid transparent;
+	background-clip: content-box;
+}
+::-webkit-scrollbar-track {
+	background: var(--background);
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--font-color);
+}
+::-webkit-scrollbar-track:hover {
+	background-color: var(--tertiary-color);
+}
+/* ==============
+    body-styling
+   ============== */
+body {
+	font-family: 'Mochiy Pop One', sans-serif;
+	background: var(--background);
+	background-blend-mode: multiply;
+	opacity: 0.8;
+	background-image: url(https://images.unsplash.com/photo-1565031491910-e57fac031c41?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWwlMjBpbnRlcmlvcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.wrapper {
+	color: var(--font-color);
+	background: var(--font-color);
+	width: 100%;
+	max-width: 800px;
+	position: relative;
+	margin: 2rem auto;
+	/* height: 100vh; */
+	border-radius: 10px;
+    padding: 4rem;
+	box-shadow: 3px 3px 15px var(--background);
+	display: flex;
+    justify-content: center;
+	align-items: center;
+}
+h1 {
+    font-size: 2.5rem;
+	color: var(--tertiary-color);
+	margin-bottom: 1rem;
+}
+section {
+	width: 80%;
+	margin: auto;
+	max-width: 600px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+form {
+	width: 100%;
+	max-width: 600px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+fieldset {
+	width: 100%;
+	border: 2px solid var(--background);
+	border-radius: 10px;
+	margin-top: 1rem;
+	padding: 2rem;
+	margin-bottom: 1rem;
+}
+legend,
+p {
+	color: var(--tertiary-color);
+	font-weight: bold;
+	font-size: 1.3rem;
+	text-transform: capitalize;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	display: block;
+}
+label {
+	display: block;
+	font-size: 1rem;
+	margin-top: 1rem;
+	color: var(--background);
+}
+.input-field {
+	width: 100%;
+}
+
+input:not([type='radio']):not([type='checkbox']):not([type='button']),
+select {
+	/* to allow padding on them */
+	display: block;
+	width: 30rem;
+	margin-bottom: 2rem;
+	font-family: 'Mochiy Pop One', sans-serif;
+	color: var(--font-color);
+	background: var(--background);
+	font-size: 1.5rem;
+	text-transform: capitalize;
+	padding: 0.8rem;
+	border-radius: 10px;
+	border: none;
+}
+
+/* styling checkboxes */
+.form-control {
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+  }
+input[type='checkbox'] {
+	accent-color: var(--tertiary-color);
+	background: var(--a-active);
+	cursor: pointer;
+    border-radius: 0.15em;
+}
+
+
+
+input[type='button'] {
+	color: var(--font-color);
+	background: var(--tertiary-color);
+	font-family: 'Mochiy Pop One', sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 1rem 2rem;
+	border-radius: 10px;
+	border: none;
+	margin-top: 2rem;
+	cursor: pointer;
+}
+.hidden {
+	display: none;
+}
+
+#receiptContainer {
+	border-top: 2px solid var(--background);
+	margin-top: 2rem;
+	line-height: 2rem;
+	color: var(--tertiary-color);
+	padding-top: 2rem;
+}
+
+/* ==============
+   styling-footer
+   ============== */
+.page-footer {
+	background-color: var(--background);
+	/* height: 4rem; */
+	color: var(--font-color);
+	text-align: center;
+    padding: 2rem;
+}
+.page-footer p {
+	color: var(--font-color);
+	font-size: 1rem;
+	font-weight: 100;
+	text-transform: none;
+	margin-top: 0;
+}
+.page-footer a {
+	text-decoration: none;
+}
+.page-footer a:link {
+	color: var(--font-color);
+}
+.page-footer a:visited {
+	color: var(--tertiary-color);
+}
+.page-footer a:hover {
+	color: var(--a-hover);
+}
+.page-footer a:active {
+	color: var(--a-active);
+}
