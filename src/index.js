@@ -16,6 +16,12 @@ function generateReceipt() {
 		roomPrice = 4000;
 	}
 
+	// Increment room prices if total persons for both rooms are more than 2
+	if (totalPersons > 2) {
+		roomPrice += 1000;
+	}
+
+
 	var amenitiesTotal = 0;
 	if (acChecked) {
 		amenitiesTotal += 1000;
@@ -41,7 +47,7 @@ function generateReceipt() {
 
 	if (acChecked) {
 		receiptContent +=
-			'<p> <strong> Avail Amenities : </strong> AC - Price: Rs. 1000 </p>';
+			'<p> <strong> Avail Amenities : </strong> AC - Price:  Rs. 1000 </p>';
 	}
 	if (lockerChecked) {
 		receiptContent +=
