@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+# digitalbhem
+Digital Bhem conducted this project for an Internship, in June 2023.
+
+
+>>>>>>> 657e986b5f5be5f9f02768e0ab788f90fe7b3588
 
 # Project Title
 
@@ -6,8 +13,13 @@ Hotel Booking Form
 # Description 
 
 The form used to book the customer's room <br>
+<<<<<<< HEAD
 . for the required days usually fortnight
 . for upto 4 persons
+=======
+. for the required days usually a fortnight
+. for up to 4 persons
+>>>>>>> 657e986b5f5be5f9f02768e0ab788f90fe7b3588
 
 # Color Reference
 
@@ -45,6 +57,9 @@ Days]
 *Additional Charges
 - Upto 2 People: No Change in Cost
 - Per Day Cost for Extra Person: 1000/-
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 657e986b5f5be5f9f02768e0ab788f90fe7b3588
