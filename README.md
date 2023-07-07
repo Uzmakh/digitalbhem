@@ -1,5 +1,3 @@
-
-
 # digitalbhem
 Digital Bhem conducted this project for an Internship, in June 2023
 
