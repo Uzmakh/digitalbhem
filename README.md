@@ -1,5 +1,5 @@
 # digitalbhem
-This project was conducted by Digital Bhem for Internship, June 2023.
+Digital Bhem conducted this project for an Internship, in June 2023.
 
 
 
@@ -10,8 +10,8 @@ Hotel Booking Form
 # Description 
 
 The form used to book the customer's room <br>
-. for the required days usually fortnight
-. for upto 4 persons
+. for the required days usually a fortnight
+. for up to 4 persons
 
 # Color Reference
 
